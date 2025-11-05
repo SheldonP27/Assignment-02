@@ -22,11 +22,15 @@
 
 
 main {
-  background-color: rgb(116, 110, 110); 
-  font-size: 15px;
+    background-color: #f1bc6b;
 }
 
 nav ol {
   display: block;
   text-align: center;
+}
+
+.project-item {
+  width: 280px;
+  background-color: rgb(44, 44, 44);
 }

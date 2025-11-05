@@ -1,5 +1,17 @@
 /* home */
 
+/* Apply the page background gradient to the whole page */
+html, body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(45deg,#F06967,#F08167,#F09A68,#F0B167,#F0C367,#F7DDCD);
+    background-attachment: fixed;
+}
+
+main {
+    background-color: beige
+}
+
 
 nav ul {
   display: flex;
@@ -10,7 +22,7 @@ nav ul {
 
 header {
     text-align: center;
-    background: linear-gradient(45deg,#C2B1FA,#D9B1FA,#F3BEFA,#F1B1FA,#FAB1DE,#FAB1B3);
+    background: linear-gradient(45deg,#F06967,#F08167,#F09A68,#F0B167,#F0C367,#F7DDCD);
     color: rgb(0, 0, 0);
 }
 
@@ -90,7 +102,7 @@ form {
 
 footer {
     text-align: center;
-    background: grey;
+    background: rgb(136, 135, 135);
     color: black; 
     padding: 10px;
     position: fixed;
@@ -107,8 +119,8 @@ footer {
 
 @media (max-width: 600px) {
     body{
-        /* font-size 80px */
-        background-color: rgb(255, 215, 245);
+        /* keep the same gradient on small screens */
+        background: linear-gradient(45deg,#F06967,#F08167,#F09A68,#F0B167,#F0C367,#F7DDCD);
     }
 
     .project-item {
@@ -118,7 +130,8 @@ footer {
 
 @media (min-width: 601px) and (max-width: 1024px) {
     body{
-        background-color:rgb(211, 113, 167);
+        /* keep the same gradient on tablet screens */
+        background: linear-gradient(45deg,#F06967,#F08167,#F09A68,#F0B167,#F0C367,#F7DDCD);
     }
 }
 

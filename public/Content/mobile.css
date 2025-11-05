@@ -1,0 +1,32 @@
+/*adjustments for mobile*/
+  
+@media (max-width: 600px) {
+  header, nav, main, footer {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+
+main {
+  background-color: rgb(116, 110, 110); 
+  font-size: 15px;
+}
+
+nav ol {
+  display: block;
+  text-align: center;
+}

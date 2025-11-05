@@ -1,0 +1,26 @@
+<%- include ./partials/header.ejs %>
+
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <%- include ./partials/main_nav.ejs %>    
+    </header>
+
+<!-- Contact Section -->
+ <main>
+    <form>
+        <label>Name: <input type="text" required>   </label><br>
+
+        <label>Email: <input type="email" required> </label><br>
+
+        <label>Phone: <input type="tel" pattern="[0-9]{10}" required> </label><br>
+        
+        <label>Comments: <textarea rows="4" required></textarea> </label><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</main>
+<!--footer with copyright and email-->
+
+    <footer>
+        <p>Contact: sheldon.pinto@ontariotechu.net | Copyright © 2025 Sheldon Pinto</p>
+    </footer>

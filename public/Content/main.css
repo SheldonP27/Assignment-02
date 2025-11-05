@@ -8,6 +8,11 @@ html, body {
     background-attachment: fixed;
 }
 
+/* Use border-box so padding doesn't increase element width unexpectedly */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 main {
     background-color: beige
 }
@@ -87,7 +92,12 @@ video {
     margin-right: 20px;
     margin-bottom: 16px;
     color: white;
-    padding: 16px; /*just added this */
+    padding: 16px; /* just added this */
+}
+
+/* Add padding inside the project list container so items don't sit on the square's border */
+.project-list {
+    padding: 48px;
 }
 
 /*contact section*/
@@ -102,7 +112,7 @@ form {
 
 footer {
     text-align: center;
-    background: rgb(136, 135, 135);
+    background: rgb(255, 255, 255);
     color: black; 
     padding: 10px;
     position: fixed;
